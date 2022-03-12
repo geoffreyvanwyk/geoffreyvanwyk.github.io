@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1646954356",layout:"default",error:a,serverRendered:true,routePath:"\u002Farticles\u002Fa-word-counter",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"27e69529"}}}}(null));
