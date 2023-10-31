@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Geoffrey van Wyk - stories</title><link href="https://geoffreyvanwyk.dev/" rel="alternate"></link><link href="https://geoffreyvanwyk.dev/feeds/stories.atom.xml" rel="self"></link><id>https://geoffreyvanwyk.dev/</id><updated>2023-10-28T00:00:00+02:00</updated><subtitle>Computer Programmer</subtitle><entry><title>How I got started</title><link href="https://geoffreyvanwyk.dev/how-i-got-started.html" rel="alternate"></link><published>2023-10-28T00:00:00+02:00</published><updated>2023-10-28T00:00:00+02:00</updated><author><name>Geoffrey Bernardo van Wyk</name></author><id>tag:geoffreyvanwyk.dev,2023-10-28:/how-i-got-started.html</id><summary type="html">&lt;p&gt;From chemical engineering to computer programming&lt;/p&gt;</summary><content type="html">&lt;p&gt;My first introduction to computer programming was in the form of &lt;a href="https://fortran-lang.org/"&gt;Fortran&lt;/a&gt; in
+a first-year second-semester module at the University of Stellenbosh in the
+1990s. Computer programming was only one half of the module; the other half was
+dedicated to &lt;a href="https://en.wikipedia.org/wiki/Mass_balance"&gt;mass balances&lt;/a&gt; in chemical engineering. During class I could
+not follow the lecturer, partly because he was not speaking loudly or clearly
+enough and partly because this was a completely new concept for me. If I missed
+something he said earlier in the lecture, what he said later was a mystery.
+There was no prescribed book, and the booklet that accompanied the course was
+not helpful at all. Eventually I realized there must be a book about Fortran in
+the library of the engineering faculty. I found one! From that point onwards the
+course was smooth sailing.&lt;/p&gt;
+&lt;p&gt;Years later I was working as a chemical engineering technician. One day while
+driving home after work one of my friends showed me a copy of an article that
+described how the next largest prime number had been calculated recently. Out of
+interest I wanted to find a way to do the calculations myself. The only tool I
+had was Microsoft Excel spreadsheets and it seemed to me that it was perfectly
+capable of performing the task. With my first attempt, I would enter a formula
+in the top cell of a column then use the fill tool to drag the calculation down
+the column until I found a prime number; then repeat the step in the next column
+to find the next prime number, and so forth. Yet I knew there must be an
+automatic way. I looked through the Excel help files without success, and
+eventually came upon a part of Excel with a big white editor that would
+highlight some letters that I would type in it. But I had no idea what it was
+for. I set out to the company library and found a book on
+&lt;a href="https://learn.microsoft.com/en-us/office/vba/api/overview/"&gt;Visual Basic for Applications&lt;/a&gt; and so started my second foray into computer
+programming. The big white editor was for Visual Basic. I eventually wrote a
+little function that would populate the cells on a spreadsheet with the sequence
+of prime numbers in dramatic fashion. My next program with VBA was for creating
+an Excel spreadsheet formula for calculating the molecular mass of a molecule.&lt;/p&gt;
+&lt;p&gt;One of my colleagues later gave me a complete video course on &lt;em&gt;Visual Basic 6&lt;/em&gt;
+in &lt;abbr title="Compact Disc"&gt;CD&lt;/abbr&gt; format which I enjoyed tremendously. With &lt;abbr title="Visual Basic 6"&gt;VB6&lt;/abbr&gt; I built a unit conversion
+app, but never completed it. Later, with &lt;a href="https://learn.microsoft.com/en-us/dotnet/visual-basic/"&gt;Visual Basic .Net&lt;/a&gt;, I built
+&lt;a href="https://sourceforge.net/projects/timepiece/"&gt;Timepiece&lt;/a&gt;, an alarm clock, stopwatch and countdown timer for your Windows
+desktop, which I am proud of. I published it on SourceForge and it has been
+downloaded more than 5000 times. I once saw that somebody made a video review of
+it, but I cannot find it anymore.&lt;/p&gt;
+&lt;p&gt;The blogs of &lt;a href="https://joelonsoftware.com/"&gt;Joel Spolsky&lt;/a&gt; and &lt;a href="https://blog.codinghorror.com/"&gt;Jeff Atwood&lt;/a&gt; cemented my interest in
+computer science. Jeff Atwood's account of how he first worked on StackOverflow
+alone, but then marshalled his previous colleagues to join him, inspired me to
+think about switching careers.&lt;/p&gt;
+&lt;p&gt;Seeking to learn more about computer science, I read the book &lt;em&gt;Think like a
+Computer Scientist&lt;/em&gt;. It also taught me the &lt;a href="https://python.org/"&gt;Python&lt;/a&gt; programming language.
+Later editions of the book were retitled to &lt;a href="https://www.amazon.com/Think-Python-Like-Computer-Scientist/dp/1491939362/ref=sr_1_1?crid=1DSQY95MZ95AP&amp;amp;keywords=think+python+3rd+edition&amp;amp;qid=1698147094&amp;amp;sprefix=think+python+%252Caps%252C348&amp;amp;sr=8-1&amp;amp;_encoding=UTF8&amp;amp;tag=geoffreyvanwy-20&amp;amp;linkCode=ur2&amp;amp;linkId=ead7d652290feaa0567a068e957cbb0a&amp;amp;camp=1789&amp;amp;creative=9325"&gt;Think Python&lt;/a&gt;. Learning that
+YouTube ran on Python, I wanted to use Python to build an eminently useful
+website like StackOverflow.&lt;/p&gt;
+&lt;p&gt;However, I was sidetracked into learning PHP when a Christian brother who built
+&lt;a href="https://wordofthehour.net/"&gt;Word of the Hour&lt;/a&gt; asked me to write a script for importing articles. PHP
+became my main focus and I decided that it was time to make computer programming
+my full time career.&lt;/p&gt;
+&lt;p&gt;After a failed attempt at starting an online business for advertising cars, I
+eventually landed my first job as a software developer at an online fashion
+store called &lt;em&gt;Spree&lt;/em&gt; which is now &lt;a href="https://superbalist.com/"&gt;Superbalist&lt;/a&gt;.&lt;/p&gt;</content><category term="stories"></category><category term="computer programming"></category><category term="getting started"></category><category term="fortran"></category><category term="php"></category><category term="python"></category><category term="moodle"></category><category term="visual basic for applications"></category><category term="chemical engineering"></category></entry></feed>

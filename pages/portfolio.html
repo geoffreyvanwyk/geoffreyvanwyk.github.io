@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Geoffrey van Wyk - Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Pelican" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://geoffreyvanwyk.dev/feeds/all.atom.xml"
+    type="application/atom+xml" rel="alternate" title="Geoffrey van Wyk Full Atom Feed" />
+  <link href="https://geoffreyvanwyk.dev/feeds/all.rss.xml"
+    type="application/rss+xml" rel="alternate" title="Geoffrey van Wyk Full RSS Feed" />
+  <link rel="stylesheet" href="https://geoffreyvanwyk.dev/theme/main.css" />
+  <script src="https://kit.fontawesome.com/4e9b15fd57.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="w-full h-screen flex flex-col justify-between heropattern-circuitboard-gray-400">
+  <nav class="flex items-center justify-between p-4 mb-2 bg-gray-700">
+<figure class="flex">
+    <a href="https://geoffreyvanwyk.dev">
+        <img src="https://geoffreyvanwyk.dev/logo.jpg" alt="Logo" class="w-16 h-16 rounded-full ring-4 ring-gray-200" />
+    </a>
+    <figcaption class="flex flex-col items-start justify-center pl-4 font-semibold">
+        <a href="https://geoffreyvanwyk.dev">
+            <div class="text-gray-100">Geoffrey van Wyk</div>
+        </a>
+        <div class="text-gray-400">Computer Programmer</div>
+    </figcaption>
+</figure><ul class="flex items-center gap-x-4">
+  <li class="text-gray-200 font-semibold capitalize"><a href="/">Home</a></li>
+  <li class=" text-gray-200 font-semibold capitalize"><a
+      href="https://geoffreyvanwyk.dev/pages/about.html">About</a></li>
+  <li class=" active  text-gray-200 font-semibold capitalize"><a
+      href="https://geoffreyvanwyk.dev/pages/portfolio.html">Portfolio</a></li>
+</ul>  </nav>
+
+  <div class="grid grid-cols-2">
+    <main class="flew-grow px-4 pb-4 w-full">
+<article class="prose prose-md prose-p:font-serif prose-a:font-sans mx-auto bg-white shadow-lg">
+<div class="relative">
+  <img class="object-cover w-full mb-0 h-60 prose-none" src="https://geoffreyvanwyk.dev/images/labrador-puppies-in-wheelbarrow.jpg"
+    alt="Labrador puppies in wheelbarrow" />
+
+  <div class="absolute bottom-0 right-0 px-2 mb-1 bg-gray-200 rounded-l-full opacity-60">
+    <span class="text-xs italic">Photo by</span>
+    <span class="text-xs uppercase">
+      <a href="https://unsplash.com/@andrewlancaster?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">
+        Andrew Lancaster
+      </a>
+    </span>
+    <span class="text-xs italic">on</span>
+    <span class="text-xs uppercase">
+      <a href="https://unsplash.com" target="_blank">
+        Unsplash
+      </a>
+    </span>
+  </div>
+</div>
+  <div class="p-4">
+    <h1>Portfolio</h1>
+    
+
+    <p>A list of my current and past projects.</p>
+<div class="toc">
+<ul>
+<li><a href="#learning-sandbox-online">Learning Sandbox Online</a></li>
+<li><a href="#ansible-role-for-moodle">Ansible Role for Moodle</a></li>
+<li><a href="#ansible-role-for-php">Ansible Role for PHP</a></li>
+<li><a href="#timepiece">Timepiece</a></li>
+</ul>
+</div>
+<hr>
+<h2 id="learning-sandbox-online">Learning Sandbox Online</h2>
+<blockquote>
+<p>Sandbox instances of Moodle</p>
+</blockquote>
+<p>The <em>Learning Sandbox Online</em> is a website with default, out-of-the-box (for the
+most part) installations of all the officially supported versions of
+<a href="https://moodle.org/" target="_blank">Moodle</a>. The installations serve as playgrounds or sandboxes giving instant,
+hassle-free access to:</p>
+<ul>
+<li>potential new users who want to see what Moodle looks like and what it offers;</li>
+<li>new users who are learning it and need an instance for that, for example while taking a course;</li>
+<li>existing users of customized versions who want to see how a certain feature normally works;</li>
+<li>existing users who want to compare features between versions;</li>
+<li>existing users who want to see what is available in the newest version;</li>
+<li>etc.</li>
+</ul>
+<p>The sandboxes are supposed to automatically reset to fresh states every hour,
+but I must still <a href="https://github.com/geoffreyvanwyk/learningsandbox.online/issues/7" target="_blank">implement this feature</a>.</p>
+<p>The website and Moodle instances are <em>automatically</em> installed and updated with
+<a href="https://docs.ansible.com/ansible/" target="_blank">Ansible</a> using my custom roles for Moodle and PHP.</p>
+<p>There is already an official Moodle demo website, but I had a number of reasons
+for building this website:</p>
+<ul>
+<li>I wanted to see how I would implement it myself.</li>
+<li>I wanted to use my custom Ansible role for Moodle in a real-world project.</li>
+<li>It fulfills my goal of building and maintaining a useful website with many
+  users, which I formed when first seeing StackOverflow and reading about its
+  history.</li>
+<li>Because it is open source, it can be used by e-learning service providers to
+  create their own branded demo website to showcase to their clients.</li>
+</ul>
+<p class="icon-before icon-solid icon-link icon-space-md prose-p:text-red-600" style="margin-bottom: 0"><a href="https://learningsandbox.online">learningsandbox.online</a></p>
+<p class="icon-before icon-brands icon-github icon-space-md" style="margin-top: 0"><a href="https://github.com/geoffreyvanwyk/learningsandbox.online">geoffreyvanwyk/learningsandbox.online</a></p>
+<hr>
+<h2 id="ansible-role-for-moodle">Ansible Role for Moodle</h2>
+<blockquote>
+<p>Deploys, installs, and upgrades Moodle on Ubuntu servers</p>
+</blockquote>
+<p>At a former employer, one of my tasks was to set up new Moodle instances for
+clients. I set out to document the steps for doing so. Because many of those
+steps were Bash shell commands, I realized I should create a script to
+automatically do the installations. While setting out to write the script, which
+would end up in many scripts that would need to be combined, I thought I should
+rather use a framework that came with a prebaked, proven method of organizing the
+scripts. The Bash framework that I chose did not work well at all and was a
+complete disaster.</p>
+<p>I had heard many times of things like Puppet, Chef and Ansible, but when I
+visited their websites I would always be stumped by the generalized language on
+their home pages that left me stumped as to whether they were relevant to my
+plan, or as to even how to start. Luckily I found an
+<a href="https://www.youtube.com/watch?v=uR1_hlHxvhc" target="_blank">introduction video</a> on YouTube that got me started
+quickly with Ansible with which I created a role for Moodle.</p>
+<p>Because the role I created for my former employer was not open source, I had
+to recreate this role completely from scratch. The advantage sometimes of
+redoing something is doing it better.</p>
+<p class="icon-before icon-solid icon-link icon-space-md prose-p:text-red-600" style="margin-bottom: 0"><a href="https://galaxy.ansible.com/ui/standalone/roles/geoffreyvanwyk/moodle/">Ansible Galaxy</a></p>
+<p class="icon-before icon-brands icon-github icon-space-md" style="margin-top: 0"><a href="https://github.com/geoffreyvanwyk/ansible-role-moodle">geoffreyvanwyk/ansible-role-moodle</a></p>
+<hr>
+<h2 id="ansible-role-for-php">Ansible Role for PHP</h2>
+<blockquote>
+<p>Installs, configures, and extends PHP on Ubuntu</p>
+</blockquote>
+<p>This Ansible role installs, configures and extends the <a href="https://php.net">PHP</a> programming language
+on <a href="https://ubuntu.com">Ubuntu</a> servers. Multiple versions of PHP can be installed simultaneously on
+the same server.</p>
+<p>Originally, I was using another third-party Ansible role for installing PHP that
+only allows a single PHP version at a time. For occasions on which multiple
+websites requiring different PHP versions must be installed on the same server
+(for example <em>Learning Sandbox Online</em> where PHP 7.4, 8.0, and 8.1 are required
+simultaneously), that role was not appropriate.  That is why I had to create my
+own role.</p>
+<p>I also limited the role to Ubuntu, because that is the Linux distribution I
+focus on.</p>
+<p class="icon-before icon-solid icon-link icon-space-md prose-p:text-red-600" style="margin-bottom: 0"><a href="https://galaxy.ansible.com/ui/standalone/roles/geoffreyvanwyk/php/">Ansible Galaxy</a></p>
+<p class="icon-before icon-brands icon-github icon-space-md" style="margin-top: 0"><a href="https://github.com/geoffreyvanwyk/ansible-role-php">geoffreyvanwyk/ansible-role-php</a></p>
+<hr>
+<h2 id="timepiece">Timepiece</h2>
+<blockquote>
+<p>Alarm clock for your desktop</p>
+</blockquote>
+<p>Timepiece is an alarm clock that runs on your desktop and includes a stopwatch
+and a countdown timer. All three timepieces can run simultaneously.</p>
+<p>You can choose your own sound file to start playing at the set alarm time. The
+sound for the countdown timer is also customizable. The alarm clock has a snooze
+feature.</p>
+<p>Timepiece has more than 5000 downloads on Sourceforge. I once saw that somebody
+created a video review of it. I cannot find it anymore, but it made me extremely
+proud.</p>
+<p class="icon-before icon-solid icon-link icon-space-md prose-p:text-red-600" style="margin-bottom: 0"><a href="https://sourceforge.net/projects/timepiece/">SourceForge</a></p>
+
+  </div>
+</article>
+    </main>
+    <aside class="mx-auto flex flex-col justify-evenly p-4">
+<div class="text-lg text-center font-semibold bg-white">Sponsored</div>
+<a href="https://www.amazon.com/Elon-Musk-Walter-Isaacson/dp/1982181281/ref=zg_bsar_g_books_sccl_11/141-8862560-3103627?psc=1&_encoding=UTF8&tag=geoffreyvanwy-20&linkCode=ur2&linkId=6317b7e049d3e734fe6160ed7abb4a66&camp=1789&creative=9325" target="_blank">
+  <img src="https://m.media-amazon.com/images/I/51M+z-t6QFL._SY445_SX342_.jpg" class="w-44 mx-auto">
+  <p class="text-center font-semibold"><span class="bg-white">Elon Musk</span></p>
+</a>
+<a href="https://www.amazon.com/American-Prometheus-Triumph-Tragedy-Oppenheimer/dp/0375726268/ref=zg_bsar_g_books_sccl_10/141-8862560-3103627?psc=1&_encoding=UTF8&tag=geoffreyvanwy-20&linkCode=ur2&linkId=149450a0fc697683816502223dbe35d6&camp=1789&creative=9325" target="_blank">
+  <img src="https://m.media-amazon.com/images/I/51rBwNT0gEL._SY445_SX342_.jpg" class="w-44 mx-auto">
+  <p class="text-center font-semibold"><span class="bg-white">American Prometheus</span></p>
+</a>
+<a href="https://www.amazon.com/48-Laws-Power-Robert-Greene/dp/0140280197/ref=zg_bsms_g_books_sccl_30/141-8862560-3103627?psc=1&_encoding=UTF8&tag=geoffreyvanwy-20&linkCode=ur2&linkId=d24229f0b8203e53408eb20861d725ae&camp=1789&creative=9325" target="_blank">
+  <img src="https://m.media-amazon.com/images/I/61XUtQ7NTgL._SY466_.jpg" class="w-44 mx-auto">
+  <p class="text-center font-semibold"><span class="bg-white">The 48 Laws of Power</span></p>
+</a>
+<a href="https://www.amazon.com/Think-Grow-Rich-Landmark-Bestseller/dp/1585424331/ref=zg_bsar_g_books_sccl_7/141-8862560-3103627?psc=1&_encoding=UTF8&tag=geoffreyvanwy-20&linkCode=ur2&linkId=6e3273c65a2e8d7b7f5596aa0bc0199a&camp=1789&creative=9325" target="_blank">
+  <img src="https://m.media-amazon.com/images/I/71UypkUjStL._SY466_.jpg" class="w-44 mx-auto">
+  <p class="text-center font-semibold"><span class="bg-white">Think and Grow Rich</span></p>
+</a>
+<a href="https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034/ref=zg_bsar_g_books_sccl_14/141-8862560-3103627?psc=1&_encoding=UTF8&tag=geoffreyvanwy-20&linkCode=ur2&linkId=988a311df045f903ea1d0c04873476af&camp=1789&creative=9325" target="_blank">
+  <img src="https://m.media-amazon.com/images/I/71vK0WVQ4rL._SY466_.jpg" class="w-44 mx-auto">
+  <p class="text-center font-semibold"><span class="bg-white">How to Win Friends & Influence People</span></p>
+</a>
+<a href="https://www.amazon.com/Total-Money-Makeover-Classic-Financial/dp/1595555277/ref=zg_bsms_g_books_sccl_37/141-8862560-3103627?psc=1&_encoding=UTF8&tag=geoffreyvanwy-20&linkCode=ur2&linkId=27f2ad50ecec699a02ed02ca3abeeb2e&camp=1789&creative=9325" target="_blank">
+  <img src="https://m.media-amazon.com/images/I/51D8IgtBaQL._SX342_SY445_.jpg" class="w-44 mx-auto">
+  <p class="text-center font-semibold"><span class="bg-white">The Total Money Makeover</span></p>
+</a>
+<a href="https://www.amazon.com/Rich-Dad-Poor-Teach-Middle/dp/1612681131/ref=zg_bsar_g_books_sccl_28/141-8862560-3103627?psc=1&_encoding=UTF8&tag=geoffreyvanwy-20&linkCode=ur2&linkId=7a71501cc27b9dad5bd92240bde89a96&camp=1789&creative=9325" target="_blank">
+  <img src="https://m.media-amazon.com/images/I/51Hfv2MfNGL._SY445_SX342_.jpg" class="w-44 mx-auto">
+  <p class="text-center font-semibold"><span class="bg-white">Rich Dad Poor Dad</span></p>
+</a>
+    </aside>
+  </div>
+
+  <footer class="bg-gray-700 p-4 mt-2 w-full flex justify-between items-center">
+<div>
+  <span class="font-semibold text-gray-400">Copyright</span>
+  <span class="text-lg font-semibold text-gray-400">&copy;</span>
+  <span class="font-semibold text-white">2023</span>
+  <span class="font-semibold text-white">Geoffrey Bernardo van Wyk</span>
+</div><a href="https://www.digitalocean.com/?refcode=0fbd041b9aad&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"
+  target="_blank">
+  <img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg"
+    alt="DigitalOcean Referral Badge" /></a>  </footer>
+</body>
+
+</html>
